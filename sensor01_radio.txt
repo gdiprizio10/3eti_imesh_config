@@ -1,0 +1,42 @@
+
+/ Description: This file is used for configure the iMesh Sensor
+/ Purpose: Radio Configuration
+/ Device Location: 5th Floor, Room 1346
+/ Address: 9715 KeyWest Av, Rockville, Maryland
+/ Device Function: Monitor the room tempreture
+/ Date: June 7, 2013
+/=========================================================================
+/ ========== Network Configuration =============================/
+/For joining the device to a Nivis System Manager that uses channel 26, the following values shall be used:
+/03250228E0FE00000BB80000F5012A060240068800006F171EFE0458B3
+
+/For joining the device to a Nivis System Manager, that doesn’t use channel 26 the following values shall be used:
+/04250228E0FE00000BB80000F5012A060240068800006F171EFE0458B31E020F18D9C5E7A3406BF2
+
+/For joining the device to a network controlled by a System Manager from another vendor, this parameter shall be provided by that vendor.
+
+//--------- To be used for Nivis System Manager on channel 26 ---/
+// With Ch 26
+NETWORK_CFG=03250228e0fe00000bb80000f5012a060240068800006f171efe0458b3
+
+//-------To be used for Nivis System Manager not on channel 26 ---/
+// No Ch 26
+//NETWORK_CFG=04250228E0FE00000BB80000F5012A060240068800006F171EFE0458B31E020F18D9C5E7A3406BF2
+
+/========== Tag Name Configuration =============================/
+TAG_NAME=sensor01
+
+/========== Security EUI address =============================/
+SM_EUI=000000000A1000A0
+
+/========== UTC time adjustment =============================/
+UTC_ADJ=35
+
+/========== Network ID =============================/
+NTW_ID=90
+
+/========== Country Code =============================/
+COUNTRY_CODE=840
+
+/========== Alert Bandwidth =============================/
+ALERT_BANDWIDTH=30

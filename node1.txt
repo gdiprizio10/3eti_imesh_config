@@ -1,0 +1,131 @@
+﻿/=========================================================================
+/ File Name: 3eTI_Rockville_5th_Floor_Room_1346_iMeshSensor_Configuration
+/ Author:  Rick Candell
+/ Title : NIST Wireless lab for Industrial Applications
+/ Description: This file is used for configure the iMesh Sensor
+/ Purpose: For General Configuration and Sensor Configuration
+/ Device Location: 5th Floor, Room 1346
+/ Address: 9715 KeyWest Ave, Rockville, Maryland
+/ Device Function: Monitor the room temperature
+/ Date: June 7, 2013
+/=========================================================================
+/-------------------------------------------
+/ General configuration
+/ Ref: 543A User Guide 2.5.2.1
+/-------------------------------------------
+
+/------------ Device Role -----------
+#DEVICE_ROLE=IO_ONLY
+DEVICE_ROLE=IO_ROUTER
+
+/------------ TX Power (dbM) ------------
+TX_PWR_DBM=13
+
+/------------ Battery Alerts -----------
+#BAT_HIGH_ALERT=OFF
+BAT_HIGH_ALERT=ON,POST=9.5,CLEAR=8.5
+
+#BAT_LOW_ALERT=OFF
+BAT_LOW_ALERT=ON,POST=6.3,CLEAR=6.7
+
+/------------ Ambient Temperature Alerts ----
+TEMP_HIGH_ALERT=OFF
+#TEMP_HIGH_ALERT=ON,POST=80,CLEAR=70
+
+TEMP_LOW_ALERT=OFF
+#TEMP_LOW_ALERT=ON,POST=-30,CLEAR=-22
+
+/------------ Publish Period --------
+#PUB_PERID_SEC=30
+PUB_PERID_SEC=2
+
+/------------ Alert Retransmission Period --------
+ALERT_RETRANSMIT_MIN=5
+
+/------------ LED Configuration ------------
+FIPS_LED=OFF
+#FIPS_LED=ON
+
+STATUS_LED=OFF
+#STATUS_LED=ON
+
+/------------ Remote IPv6 Address --------
+REMOTE_IPV6=fe8000000000000000004e7c7f000001
+
+/------------ Remote Port -------
+REMOTE_PORT=61618
+
+//////////////////////////////////////////
+REMOTE_OBJ_ID=5
+
+/-------------------------------------------
+/
+/ Sensor configuration
+/ Ref: AirGuard iMesh Sensor Node (3e-543A) User Guide’s 2.5.2.2
+/-------------------------------------------
+/------------ Select Sensor Type -------
+// Select sensor type, the last one will be activated
+#SENSOR_TYPE=NONE
+#SENSOR_TYPE=AMR
+#SENSOR_TYPE=PULSE_METER
+SENSOR_TYPE=HV_ANALOG
+
+/------------ Sensor Serial Port Configuration ----
+/ Parity Check
+/ N: None
+/ O: Odd
+/ E: Even
+/
+/ Baud Rate Options: 2400,4800,9600,19200,38400,57600,76800, 115200
+/-------------------------------------------------------------------
+#SENSOR_TYPE=RS232_9600,N
+#SENSOR_TYPE=RS485_115200,O
+#SENSOR_TYPE=RS422_38400,E
+
+/---------- In Line Termination --------------------------/
+/ In line Termination is used for serial port only /
+
+/ It should be commented out if sensor IO is not used /
+/ as serial interface, otherwise the termination will /
+/ cause problem for other interface /
+/----------------------------------------------------------/
+#INT_LINE_TERMINATION=ON
+#INT_LINE_TERMINATION=OFF
+
+/---------- Thermocouple Configuration --------
+#SENSOR_TYPE=TC_K
+#SENSOR_TYPE=TC_J
+#SENSOR_TYPE=TC_N
+#SENSOR_TYPE=TC_T
+#SENSOR_TYPE=DUAL_TC_K
+#SENSOR_TYPE=DUAL_TC_J
+#SENSOR_TYPE=DUAL_TC_N
+#SENSOR_TYPE=DUAL_TC_T
+
+/---------- Resistance Thermal Detector configuration ---
+#SENSOR_TYPE=RTD_PT100_385
+#SENSOR_TYPE=RTD_PT100_392
+#SENSOR_TYPE=RTD_CU10_427
+#SENSOR_TYPE=RTD_NI120_672
+#SENSOR_TYPE=RTD_NIFE604_518
+#SENSOR_TYPE=DUAL_RTD_PT100_385
+#SENSOR_TYPE=DUAL_RTD_PT100_392
+#SENSOR_TYPE=DUAL_RTD_CU10_427
+#SENSOR_TYPE=DUAL_RTD_NI120_672
+#SENSOR_TYPE=DUAL_RTD_NIFE604_518
+
+/-----------------------------------------------------------------
+/-------- Temperature sensor alert threshold configuration --
+/-------- for both thermocouple and resistance thermal detector --
+/ Ref: 3e-543A User Guide 2.5.2.2.2
+
+/-----------------------------------------------------------------
+CH1_HIGH_ALERT=OFF
+#CH1_HIGH_ALERT=ON,POST=200,CLEAR=188.5
+CH1_LOW_ALERT=OFF
+#CH1_LOW_ALERT=ON,POST=0,CLEAR=23.3
+CH2_HIGH_ALERT=OFF
+#CH2_HIGH_ALERT=ON,POST=300.2,CLEAR=248.6
+CH2_LOW_ALERT=OFF
+#CH2_LOW_ALERT=ON,POST=200.1,CLEAR=219.7
+

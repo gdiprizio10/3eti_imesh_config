@@ -1,0 +1,17 @@
+3-OutputFiles-90/gw/GW_White_List_90_system_manager.txt
+2-OutputFiles-90/fd-usb/usb-90-join-0022ff0000026764
+1-OutputFiles-90/fd-usb/usb-90-kek-0022ff0000026764
+4-OutputFiles-90/fd-ota/temp-0022ff0000026764
+0-OutputFiles-90/fd-ota/fd-90-ota-0022ff0000026764
+2-OutputFiles-90/fd-usb/usb-90-join-0022ff0000026787
+1-OutputFiles-90/fd-usb/usb-90-kek-0022ff0000026787
+4-OutputFiles-90/fd-ota/temp-0022ff0000026787
+0-OutputFiles-90/fd-ota/fd-90-ota-0022ff0000026787
+2-OutputFiles-90/fd-usb/usb-90-join-0022ff00000267aa
+1-OutputFiles-90/fd-usb/usb-90-kek-0022ff00000267aa
+4-OutputFiles-90/fd-ota/temp-0022ff00000267aa
+0-OutputFiles-90/fd-ota/fd-90-ota-0022ff00000267aa
+2-OutputFiles-90/fd-usb/usb-90-join-0022ff0000026910
+1-OutputFiles-90/fd-usb/usb-90-kek-0022ff0000026910
+4-OutputFiles-90/fd-ota/temp-0022ff0000026910
+0-OutputFiles-90/fd-ota/fd-90-ota-0022ff0000026910
